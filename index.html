@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>company name</title>
+        <link rel="stylesheet" href="./output.css" />
+        <script defer src="main.js"></script>
+    </head>
+    <body class="bg-black text-white h-screen flex flex-col">
+        <header
+            class="bg-gray-800 flex items-center justify-between py-4 px-10"
+        >
+            <img alt="company logo" src="Amazon_logo.svg.png" width="100" />
+            <nav>
+                <ul class="flex gap-4 text-lg uppercase">
+                    <li
+                        id="about-nav"
+                        class="rounded-md text-gray-300 px-3 py-2 hover:bg-gray-700 hover:text-white"
+                    >
+                        About
+                    </li>
+                    <li
+                        id="services-nav"
+                        class="rounded-md text-gray-300 px-3 py-2 hover:bg-gray-700 hover:text-white"
+                    >
+                        Services
+                    </li>
+                    <li
+                        id="contact-nav"
+                        class="rounded-md text-gray-300 px-3 py-2 hover:bg-gray-700 hover:text-white"
+                    >
+                        Contact
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="flex-1 w-3/4 mx-auto py-10">
+            <section id="contact-section" class="hidden">
+                <h2 class="text-blue-500 text-4xl font-bold mb-4">
+                    Contact Us
+                </h2>
+                <p class="mb-4">
+                    Want to reach us? We would love to hear from you and we'll
+                    respond as soon as possible.
+                </p>
+                <div class="py-12 px-8 bg-gray-800">
+                    <form action="" class="grid grid-cols-2 gap-8">
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold"
+                                >Name<span class="text-red-500"
+                                    >&ast;</span
+                                ></label
+                            >
+                            <input
+                                type="text"
+                                name="name"
+                                required
+                                placeholder="Enter your name"
+                                class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold"
+                                >Email<span class="text-red-500"
+                                    >&ast;</span
+                                ></label
+                            >
+                            <input
+                                type="email"
+                                name="email"
+                                required
+                                placeholder="Enter your email"
+                                class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold"
+                                >Phone<span class="text-red-500"
+                                    >&ast;</span
+                                ></label
+                            >
+                            <input
+                                type="tel"
+                                name="phone"
+                                required
+                                placeholder="Enter your phone number"
+                                class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold"
+                                >Subject<span class="text-red-500"
+                                    >&ast;</span
+                                ></label
+                            >
+                            <input
+                                type="text"
+                                name="subject"
+                                required
+                                placeholder="Enter your subject"
+                                class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                            />
+                        </div>
+                        <div class="flex flex-col gap-1 col-span-2">
+                            <label class="font-semibold"
+                                >Message<span class="text-red-500"
+                                    >&ast;</span
+                                ></label
+                            >
+                            <textarea
+                                name="message"
+                                required
+                                placeholder="Enter your message"
+                                class="border-[1px] border-white bg-gray-800 p-2 rounded-md"
+                            ></textarea>
+                        </div>
+                    </form>
+                    <div class="flex justify-center content-center mt-8">
+                        <button
+                            type="submit"
+                            class="py-4 px-6 border-2 border-white hover:scale-95 transition-all rounded-md w-2/3"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="flex flex-col bg-gray-500 text-gray-200 px-10 py-4">
+            <div class="flex justify-between">
+                <div>
+                    <img
+                        alt="company logo"
+                        src="Amazon_logo.svg.png"
+                        width="100"
+                    />
+                    <p>
+                        Amazon is an innovative IT consulting firm in Hyderabad
+                        helping companies to find the right candidates for their
+                        staffing needs.
+                    </p>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <address>
+                        <ul>
+                            <li class="flex flex-row">
+                                <img
+                                    src="location-dot-solid.svg"
+                                    alt="location symbol"
+                                    width="15px"
+                                />physical address
+                            </li>
+                            <li class="flex flex-row">
+                                <img
+                                    src="phone-solid.svg"
+                                    alt="phone symbol"
+                                    width="15px"
+                                />phone number
+                            </li>
+                            <li class="flex flex-row">
+                                <img
+                                    src="envelope-solid.svg"
+                                    alt="email symbol"
+                                    width="15px"
+                                />email
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+            <hr />
+            <p>
+                &copy;2022-2024 amazon technologies pvt ltd, India. All rights
+                reserved.
+            </p>
+        </footer>
+    </body>
+</html>
